@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 
 import com.google.android.material.tabs.TabLayout;
 
@@ -20,5 +22,24 @@ public class MainActivity extends AppCompatActivity {
         Log.i(TAG, "This is an info log.");
         Log.w(TAG, "This is a warn log.");
         Log.e(TAG, "This is an error log.");
+
+        Button button = (Button) findViewById(R.id.button3);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.i(TAG,"Button blue Clicked");
+            }
+        });
+        Button button1 = (Button) findViewById(R.id.button);
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.i(TAG,"Button yellow Clicked");
+            }
+        });
+
+
+
+
     }
 }
