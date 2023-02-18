@@ -1,35 +1,28 @@
 package com.example.kobeproject;
 
-import static android.content.ContentValues.TAG;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
-public class SecondActivity extends AppCompatActivity {
+public class ThirdActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_second);
+        setContentView(R.layout.activity_third);
 
-        Button secondbutton = (Button) findViewById(R.id.secondbutton);
-        secondbutton.setOnClickListener(new View.OnClickListener() {
+        Button button3 = (Button) findViewById(R.id.thirdbutton);
+        button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(SecondActivity.this, ThirdActivity.class);
+                Intent intent = new Intent(ThirdActivity.this, FourthActivity.class);
                 startActivity(intent);
 
             }
         });
     }
-
-
 }
-
-

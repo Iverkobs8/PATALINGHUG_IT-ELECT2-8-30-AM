@@ -26,8 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
         Button button = (Button) findViewById(R.id.button3);
         button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+            @Override   public void onClick(View v) {
                 Log.i(TAG,"Button blue Clicked");
             }
         });
@@ -36,8 +35,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Log.i(TAG,"Button yellow Clicked");
-           Intent intent = new Intent(MainActivity.this, SecondActivity.class);
-           startActivity(intent);
+                Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+                startActivity(intent);
+
             }
         });
 
