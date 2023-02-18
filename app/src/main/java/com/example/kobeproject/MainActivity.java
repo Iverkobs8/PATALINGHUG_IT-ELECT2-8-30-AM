@@ -2,6 +2,7 @@ package com.example.kobeproject;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -30,11 +31,13 @@ public class MainActivity extends AppCompatActivity {
                 Log.i(TAG,"Button blue Clicked");
             }
         });
-        Button button1 = (Button) findViewById(R.id.button);
+        Button button1 = (Button) findViewById(R.id.button3);
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Log.i(TAG,"Button yellow Clicked");
+           Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+           startActivity(intent);
             }
         });
 
