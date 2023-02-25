@@ -12,10 +12,10 @@ public class ThirdActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_third);
+        setContentView(R.layout.activity_third2);
 
-        Button button3 = (Button) findViewById(R.id.thirdbutton);
-        button3.setOnClickListener(new View.OnClickListener() {
+        Button secondbutton = (Button) findViewById(R.id.button2);
+        secondbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -25,4 +25,6 @@ public class ThirdActivity extends AppCompatActivity {
             }
         });
     }
+
+
 }
